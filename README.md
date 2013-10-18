@@ -5,6 +5,16 @@
 Stream [GeoJSON](http://geojson.org/) features into a [Leaflet](http://leafletjs.com/)
 layer.
 
+## usage
+
+With [browserify](https://github.com/substack/node-browserify)
+
+    npm install --save leaflet-geojson-stream
+
+Otherwise
+
+    curl https://raw.github.com/tmcw/leaflet-geojson-stream/master/leafletgeojsonstream.js > leafletgeojsonstream.js
+
 ## api
 
 ### `lgs.ajax(url: string, layer: L.geoJson instance)`
@@ -43,3 +53,10 @@ And open http://localhost:3000/
 
 A simple abstraction on top of [geojson-stream](https://github.com/tmcw/geojson-stream),
 which is in turn just a bit of sugar on [JSONStream](https://github.com/dominictarr/JSONStream).
+
+## Caveats
+
+* Some servers will send huge chunks in their responses. This depends on a
+  keep-alive connection with reasonable bites.
+* The GeoJSON object returned by the server currently _must_ be a `FeatureCollection`
+  at its root.
