@@ -1,6 +1,5 @@
 var express = require('express'),
     browserify = require('browserify'),
-    slow = require('slow-stream'),
     app = express();
 
 app.get('/', function(req, res) {
