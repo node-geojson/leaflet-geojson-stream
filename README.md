@@ -52,7 +52,9 @@ And open http://localhost:3000/
 ## How
 
 A simple abstraction on top of [geojson-stream](https://github.com/tmcw/geojson-stream),
-which is in turn just a bit of sugar on [JSONStream](https://github.com/dominictarr/JSONStream).
+which is in turn just a bit of sugar on [JSONStream](https://github.com/dominictarr/JSONStream). Regular old
+[XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) allows for partial replies
+under the magical 'status code 3'. This doesn't use WebSockets or anything else fancy.
 
 ## Caveats
 
