@@ -49,6 +49,11 @@ To run the prepackaged example:
 
 And open http://localhost:3000/
 
+## build
+
+    npm install
+    npm run-script build
+
 ## How
 
 A simple abstraction on top of [geojson-stream](https://github.com/tmcw/geojson-stream),

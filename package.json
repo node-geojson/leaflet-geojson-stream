@@ -4,7 +4,8 @@
   "description": "leaflet geojson loading with streaming",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha -R spec",
+    "build": "browserify -s leafletGeojsonStream index.js > leafletgeojsonstream.js && uglifyjs leafletgeojsonstream.js -c -m > leafletgeojsonstream.min.js"
   },
   "repository": {
     "type": "git",
@@ -27,8 +28,9 @@
     "through": "~2.3.4"
   },
   "devDependencies": {
-    "browserify": "~2.34.3",
+    "browserify": "~3.44.2",
     "express": "~3.4.1",
-    "leaflet": "~0.7.2"
+    "leaflet": "~0.7.2",
+    "uglifyjs": "~2.3.6"
   }
 }
