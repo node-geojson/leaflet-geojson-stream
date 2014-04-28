@@ -1,6 +1,5 @@
 var express = require('express'),
     browserify = require('browserify'),
-    slow = require('slow-stream'),
     app = express();
 
 app.get('/', function(req, res) {
@@ -37,6 +36,7 @@ app.get('/points.geojson', function(req, res) {
 });
 
 app.listen(3000);
+console.log('open http://localhost:3000');
 
 function randomFeature() {
     return {
