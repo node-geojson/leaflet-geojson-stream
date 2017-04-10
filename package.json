@@ -23,14 +23,14 @@
     "url": "https://github.com/tmcw/leaflet-geojson-stream/issues"
   },
   "dependencies": {
-    "hyperquest": "~0.3.0",
-    "geojson-stream": "0.0.0",
+    "hyperquest": "~2.1.2",
+    "geojson-stream": "0.0.1",
     "through": "~2.3.4"
   },
   "devDependencies": {
-    "browserify": "~3.44.2",
-    "express": "~3.4.1",
-    "leaflet": "~0.7.2",
-    "uglifyjs": "~2.3.6"
+    "browserify": "~14.3.0",
+    "express": "~4.15.2",
+    "leaflet": "~1.0.3",
+    "uglifyjs": "~2.4.10"
   }
 }
