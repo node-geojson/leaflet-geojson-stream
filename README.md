@@ -1,5 +1,7 @@
 # leaflet-geojson-stream
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tmcw/leaflet-geojson-stream.svg)](https://greenkeeper.io/)
+
 ![](http://i.imgur.com/lVF6xZl.gif)
 
 Stream [GeoJSON](http://geojson.org/) features into a [Leaflet](http://leafletjs.com/)
