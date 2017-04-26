@@ -25,7 +25,8 @@
   "dependencies": {
     "hyperquest": "~0.3.0",
     "geojson-stream": "0.0.0",
-    "through": "~2.3.4"
+    "through": "~2.3.4",
+    "slow-stream": "0.0.4"
   },
   "devDependencies": {
     "browserify": "~3.44.2",
